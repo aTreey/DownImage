@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1707CD1F1E505CCB00161624 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1707CD1E1E505CCB00161624 /* main.m */; };
+		1707CD221E505CCB00161624 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1707CD211E505CCB00161624 /* AppDelegate.m */; };
+		1707CD251E505CCB00161624 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1707CD241E505CCB00161624 /* ViewController.m */; };
+		1707CD281E505CCB00161624 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1707CD261E505CCB00161624 /* Main.storyboard */; };
+		1707CD2A1E505CCB00161624 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1707CD291E505CCB00161624 /* Assets.xcassets */; };
+		1707CD2D1E505CCB00161624 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1707CD2B1E505CCB00161624 /* LaunchScreen.storyboard */; };
+		1707CD381E505CCB00161624 /* DowneImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1707CD371E505CCB00161624 /* DowneImageTests.m */; };
+		1707CD431E505CCB00161624 /* DowneImageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1707CD421E505CCB00161624 /* DowneImageUITests.m */; };
+		1707CD511E505E3900161624 /* apps.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1707CD501E505E3900161624 /* apps.plist */; };
+		1707CD541E505EAB00161624 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 1707CD531E505EAB00161624 /* Model.m */; };
+		1707CD571E50944F00161624 /* DownOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1707CD561E50944F00161624 /* DownOperation.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1707CD341E505CCB00161624 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1707CD121E505CCB00161624 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1707CD191E505CCB00161624;
+			remoteInfo = DowneImage;
+		};
+		1707CD3F1E505CCB00161624 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1707CD121E505CCB00161624 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1707CD191E505CCB00161624;
+			remoteInfo = DowneImage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1707CD1A1E505CCB00161624 /* DowneImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DowneImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1707CD1E1E505CCB00161624 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1707CD201E505CCB00161624 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1707CD211E505CCB00161624 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1707CD231E505CCB00161624 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1707CD241E505CCB00161624 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1707CD271E505CCB00161624 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1707CD291E505CCB00161624 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1707CD2C1E505CCB00161624 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1707CD2E1E505CCB00161624 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1707CD331E505CCB00161624 /* DowneImageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DowneImageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1707CD371E505CCB00161624 /* DowneImageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DowneImageTests.m; sourceTree = "<group>"; };
+		1707CD391E505CCB00161624 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1707CD3E1E505CCB00161624 /* DowneImageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DowneImageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1707CD421E505CCB00161624 /* DowneImageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DowneImageUITests.m; sourceTree = "<group>"; };
+		1707CD441E505CCB00161624 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1707CD501E505E3900161624 /* apps.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apps.plist; sourceTree = "<group>"; };
+		1707CD521E505EAB00161624 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		1707CD531E505EAB00161624 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		1707CD551E50944F00161624 /* DownOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownOperation.h; sourceTree = "<group>"; };
+		1707CD561E50944F00161624 /* DownOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownOperation.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1707CD171E505CCB00161624 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1707CD301E505CCB00161624 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1707CD3B1E505CCB00161624 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1707CD111E505CCB00161624 = {
+			isa = PBXGroup;
+			children = (
+				1707CD1C1E505CCB00161624 /* DowneImage */,
+				1707CD361E505CCB00161624 /* DowneImageTests */,
+				1707CD411E505CCB00161624 /* DowneImageUITests */,
+				1707CD1B1E505CCB00161624 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1707CD1B1E505CCB00161624 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1707CD1A1E505CCB00161624 /* DowneImage.app */,
+				1707CD331E505CCB00161624 /* DowneImageTests.xctest */,
+				1707CD3E1E505CCB00161624 /* DowneImageUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1707CD1C1E505CCB00161624 /* DowneImage */ = {
+			isa = PBXGroup;
+			children = (
+				1707CD201E505CCB00161624 /* AppDelegate.h */,
+				1707CD211E505CCB00161624 /* AppDelegate.m */,
+				1707CD231E505CCB00161624 /* ViewController.h */,
+				1707CD241E505CCB00161624 /* ViewController.m */,
+				1707CD551E50944F00161624 /* DownOperation.h */,
+				1707CD561E50944F00161624 /* DownOperation.m */,
+				1707CD521E505EAB00161624 /* Model.h */,
+				1707CD531E505EAB00161624 /* Model.m */,
+				1707CD261E505CCB00161624 /* Main.storyboard */,
+				1707CD291E505CCB00161624 /* Assets.xcassets */,
+				1707CD2B1E505CCB00161624 /* LaunchScreen.storyboard */,
+				1707CD2E1E505CCB00161624 /* Info.plist */,
+				1707CD1D1E505CCB00161624 /* Supporting Files */,
+			);
+			path = DowneImage;
+			sourceTree = "<group>";
+		};
+		1707CD1D1E505CCB00161624 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1707CD501E505E3900161624 /* apps.plist */,
+				1707CD1E1E505CCB00161624 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1707CD361E505CCB00161624 /* DowneImageTests */ = {
+			isa = PBXGroup;
+			children = (
+				1707CD371E505CCB00161624 /* DowneImageTests.m */,
+				1707CD391E505CCB00161624 /* Info.plist */,
+			);
+			path = DowneImageTests;
+			sourceTree = "<group>";
+		};
+		1707CD411E505CCB00161624 /* DowneImageUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1707CD421E505CCB00161624 /* DowneImageUITests.m */,
+				1707CD441E505CCB00161624 /* Info.plist */,
+			);
+			path = DowneImageUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1707CD191E505CCB00161624 /* DowneImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1707CD471E505CCB00161624 /* Build configuration list for PBXNativeTarget "DowneImage" */;
+			buildPhases = (
+				1707CD161E505CCB00161624 /* Sources */,
+				1707CD171E505CCB00161624 /* Frameworks */,
+				1707CD181E505CCB00161624 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DowneImage;
+			productName = DowneImage;
+			productReference = 1707CD1A1E505CCB00161624 /* DowneImage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1707CD321E505CCB00161624 /* DowneImageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1707CD4A1E505CCB00161624 /* Build configuration list for PBXNativeTarget "DowneImageTests" */;
+			buildPhases = (
+				1707CD2F1E505CCB00161624 /* Sources */,
+				1707CD301E505CCB00161624 /* Frameworks */,
+				1707CD311E505CCB00161624 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1707CD351E505CCB00161624 /* PBXTargetDependency */,
+			);
+			name = DowneImageTests;
+			productName = DowneImageTests;
+			productReference = 1707CD331E505CCB00161624 /* DowneImageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1707CD3D1E505CCB00161624 /* DowneImageUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1707CD4D1E505CCB00161624 /* Build configuration list for PBXNativeTarget "DowneImageUITests" */;
+			buildPhases = (
+				1707CD3A1E505CCB00161624 /* Sources */,
+				1707CD3B1E505CCB00161624 /* Frameworks */,
+				1707CD3C1E505CCB00161624 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1707CD401E505CCB00161624 /* PBXTargetDependency */,
+			);
+			name = DowneImageUITests;
+			productName = DowneImageUITests;
+			productReference = 1707CD3E1E505CCB00161624 /* DowneImageUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1707CD121E505CCB00161624 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Hongpeng Yu";
+				TargetAttributes = {
+					1707CD191E505CCB00161624 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 7VPCN79662;
+						ProvisioningStyle = Automatic;
+					};
+					1707CD321E505CCB00161624 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 7VPCN79662;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1707CD191E505CCB00161624;
+					};
+					1707CD3D1E505CCB00161624 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 7VPCN79662;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1707CD191E505CCB00161624;
+					};
+				};
+			};
+			buildConfigurationList = 1707CD151E505CCB00161624 /* Build configuration list for PBXProject "DowneImage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1707CD111E505CCB00161624;
+			productRefGroup = 1707CD1B1E505CCB00161624 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1707CD191E505CCB00161624 /* DowneImage */,
+				1707CD321E505CCB00161624 /* DowneImageTests */,
+				1707CD3D1E505CCB00161624 /* DowneImageUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1707CD181E505CCB00161624 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1707CD511E505E3900161624 /* apps.plist in Resources */,
+				1707CD2D1E505CCB00161624 /* LaunchScreen.storyboard in Resources */,
+				1707CD2A1E505CCB00161624 /* Assets.xcassets in Resources */,
+				1707CD281E505CCB00161624 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1707CD311E505CCB00161624 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1707CD3C1E505CCB00161624 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1707CD161E505CCB00161624 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1707CD571E50944F00161624 /* DownOperation.m in Sources */,
+				1707CD251E505CCB00161624 /* ViewController.m in Sources */,
+				1707CD221E505CCB00161624 /* AppDelegate.m in Sources */,
+				1707CD1F1E505CCB00161624 /* main.m in Sources */,
+				1707CD541E505EAB00161624 /* Model.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1707CD2F1E505CCB00161624 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1707CD381E505CCB00161624 /* DowneImageTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1707CD3A1E505CCB00161624 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1707CD431E505CCB00161624 /* DowneImageUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1707CD351E505CCB00161624 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1707CD191E505CCB00161624 /* DowneImage */;
+			targetProxy = 1707CD341E505CCB00161624 /* PBXContainerItemProxy */;
+		};
+		1707CD401E505CCB00161624 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1707CD191E505CCB00161624 /* DowneImage */;
+			targetProxy = 1707CD3F1E505CCB00161624 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1707CD261E505CCB00161624 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1707CD271E505CCB00161624 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1707CD2B1E505CCB00161624 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1707CD2C1E505CCB00161624 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1707CD451E505CCB00161624 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1707CD461E505CCB00161624 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1707CD481E505CCB00161624 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7VPCN79662;
+				INFOPLIST_FILE = DowneImage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = atreey.github.io.DowneImage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1707CD491E505CCB00161624 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7VPCN79662;
+				INFOPLIST_FILE = DowneImage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = atreey.github.io.DowneImage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1707CD4B1E505CCB00161624 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7VPCN79662;
+				INFOPLIST_FILE = DowneImageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = atreey.github.io.DowneImageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DowneImage.app/DowneImage";
+			};
+			name = Debug;
+		};
+		1707CD4C1E505CCB00161624 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7VPCN79662;
+				INFOPLIST_FILE = DowneImageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = atreey.github.io.DowneImageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DowneImage.app/DowneImage";
+			};
+			name = Release;
+		};
+		1707CD4E1E505CCB00161624 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 7VPCN79662;
+				INFOPLIST_FILE = DowneImageUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = atreey.github.io.DowneImageUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DowneImage;
+			};
+			name = Debug;
+		};
+		1707CD4F1E505CCB00161624 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 7VPCN79662;
+				INFOPLIST_FILE = DowneImageUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = atreey.github.io.DowneImageUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DowneImage;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1707CD151E505CCB00161624 /* Build configuration list for PBXProject "DowneImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1707CD451E505CCB00161624 /* Debug */,
+				1707CD461E505CCB00161624 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1707CD471E505CCB00161624 /* Build configuration list for PBXNativeTarget "DowneImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1707CD481E505CCB00161624 /* Debug */,
+				1707CD491E505CCB00161624 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1707CD4A1E505CCB00161624 /* Build configuration list for PBXNativeTarget "DowneImageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1707CD4B1E505CCB00161624 /* Debug */,
+				1707CD4C1E505CCB00161624 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1707CD4D1E505CCB00161624 /* Build configuration list for PBXNativeTarget "DowneImageUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1707CD4E1E505CCB00161624 /* Debug */,
+				1707CD4F1E505CCB00161624 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1707CD121E505CCB00161624 /* Project object */;
+}
