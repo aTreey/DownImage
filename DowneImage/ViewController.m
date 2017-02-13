@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "Model.h"
-#import "DownOperation.h"
+#import "DownLoadManager.h"
 
 
 @interface ViewController ()
@@ -41,31 +41,42 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     Model *appInfo = self.appInfos[0];
     
-    if (_operationCache[appInfo.icon]) {
-        NSLog(@"正在下载中。。。");
-        return;
-    }
+//    if (_operationCache[appInfo.icon]) {
+//        NSLog(@"正在下载中。。。");
+//        return;
+//    }
+//    
+//    DownOperation *operation = [DownOperation downImageWithurlPath:appInfo.icon finishBlcok:^(UIImage *image) {
+//        
+//        // 图片下载完成后清楚缓存字典中数据
+//        [_operationCache removeObjectForKey:appInfo.icon];
+//        
+//        // 注意: 此处需回到主线程更新UI
+//        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+//            self.testImage.image = image;
+//            NSLog(@"下载完成");
+//        }];
+//        
+//    }];
+//    
+//    
+//    
+//    // 下载任务添加到队列中
+//    [self.downLoadQueue addOperation:operation];
+//    
+//    // 添加到操作缓存
+//    self.operationCache[appInfo.icon] = operation;
     
-    DownOperation *operation = [DownOperation downImageWithurlPath:appInfo.icon finishBlcok:^(UIImage *image) {
-        
-        // 图片下载完成后清楚缓存字典中数据
-        [_operationCache removeObjectForKey:appInfo.icon];
-        
-        // 注意: 此处需回到主线程更新UI
+    
+    
+    // 增加manager 类后
+    [[DownLoadManager sharedInstance] downloadImageWithurlPath:appInfo.icon finishBlock:^(UIImage *image) {
         [[NSOperationQueue mainQueue] addOperationWithBlock:^{
             self.testImage.image = image;
-            NSLog(@"下载完成");
         }];
-        
     }];
     
     
-    
-    // 下载任务添加到队列中
-    [self.downLoadQueue addOperation:operation];
-    
-    // 添加到操作缓存
-    self.operationCache[appInfo.icon] = operation;
     
     /*
     
@@ -120,6 +131,9 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+    
+    [_operationCache removeAllObjects];
+    self.testImage.image = nil;
     // Dispose of any resources that can be recreated.
 }
 

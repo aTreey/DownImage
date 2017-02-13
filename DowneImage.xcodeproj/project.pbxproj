@@ -18,6 +18,7 @@
 		1707CD511E505E3900161624 /* apps.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1707CD501E505E3900161624 /* apps.plist */; };
 		1707CD541E505EAB00161624 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 1707CD531E505EAB00161624 /* Model.m */; };
 		1707CD571E50944F00161624 /* DownOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1707CD561E50944F00161624 /* DownOperation.m */; };
+		1734D8361E5205BC006B2EF6 /* DownLoadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1734D8351E5205BC006B2EF6 /* DownLoadManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		1707CD531E505EAB00161624 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
 		1707CD551E50944F00161624 /* DownOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownOperation.h; sourceTree = "<group>"; };
 		1707CD561E50944F00161624 /* DownOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownOperation.m; sourceTree = "<group>"; };
+		1734D8341E5205BC006B2EF6 /* DownLoadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownLoadManager.h; sourceTree = "<group>"; };
+		1734D8351E5205BC006B2EF6 /* DownLoadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownLoadManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				1707CD241E505CCB00161624 /* ViewController.m */,
 				1707CD551E50944F00161624 /* DownOperation.h */,
 				1707CD561E50944F00161624 /* DownOperation.m */,
+				1734D8341E5205BC006B2EF6 /* DownLoadManager.h */,
+				1734D8351E5205BC006B2EF6 /* DownLoadManager.m */,
 				1707CD521E505EAB00161624 /* Model.h */,
 				1707CD531E505EAB00161624 /* Model.m */,
 				1707CD261E505CCB00161624 /* Main.storyboard */,
@@ -293,6 +298,7 @@
 				1707CD571E50944F00161624 /* DownOperation.m in Sources */,
 				1707CD251E505CCB00161624 /* ViewController.m in Sources */,
 				1707CD221E505CCB00161624 /* AppDelegate.m in Sources */,
+				1734D8361E5205BC006B2EF6 /* DownLoadManager.m in Sources */,
 				1707CD1F1E505CCB00161624 /* main.m in Sources */,
 				1707CD541E505EAB00161624 /* Model.m in Sources */,
 			);
@@ -532,6 +538,7 @@
 				1707CD491E505CCB00161624 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1707CD4A1E505CCB00161624 /* Build configuration list for PBXNativeTarget "DowneImageTests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +547,7 @@
 				1707CD4C1E505CCB00161624 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1707CD4D1E505CCB00161624 /* Build configuration list for PBXNativeTarget "DowneImageUITests" */ = {
 			isa = XCConfigurationList;
@@ -548,6 +556,7 @@
 				1707CD4F1E505CCB00161624 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
