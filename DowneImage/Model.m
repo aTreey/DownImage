@@ -19,6 +19,8 @@
     return self;
 }
 
+- (void)setValue:(id)value forUndefinedKey:(NSString *)key { }
+
 + (instancetype)appInfosModelWithDict:(NSDictionary *)dict {
     return [[self alloc] initWithDict:dict];
 }

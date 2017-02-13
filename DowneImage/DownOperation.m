@@ -8,6 +8,7 @@
 
 #import "DownOperation.h"
 @interface DownOperation ()
+@property (nonatomic, copy) NSString *urlStr;
 @property (nonatomic, copy) finishBlock finishBlock;
 @end
 
@@ -17,6 +18,9 @@
     @autoreleasepool {
         NSURL *url = [NSURL URLWithString:_urlStr];
         NSData *data = [NSData dataWithContentsOfURL:url];
+        
+        sleep(5);
+        
         UIImage *image = [UIImage imageWithData:data];
         
         if (_finishBlock) {
