@@ -10,7 +10,6 @@
 #import "DownOperation.h"
 
 @interface DownLoadManager : NSObject
-@property (nonatomic, copy) finishBlock finishBlock;
 + (instancetype)sharedInstance;
 - (void)downloadImageWithurlPath:(NSString *)urlPath finishBlock:(finishBlock)finishBlock;
 @end

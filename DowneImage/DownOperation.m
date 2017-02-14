@@ -7,6 +7,8 @@
 //
 
 #import "DownOperation.h"
+
+
 @interface DownOperation ()
 @property (nonatomic, copy) NSString *urlStr;
 @property (nonatomic, copy) finishBlock finishBlock;
