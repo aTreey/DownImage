@@ -8,8 +8,7 @@
 
 #import "ViewController.h"
 #import "Model.h"
-#import "DownLoadManager.h"
-
+#import "TestImageView.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) NSArray *appInfos;
@@ -24,7 +23,7 @@
  */
 @property (nonatomic, strong) NSMutableDictionary *operationCache;
 
-@property (weak, nonatomic) IBOutlet UIImageView *testImage;
+@property (weak, nonatomic) IBOutlet TestImageView *testImageView;
 
 @end
 
@@ -39,8 +38,9 @@
 
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    Model *appInfo = self.appInfos[0];
+    Model *appInfo = self.appInfos[arc4random_uniform(16)];
     
+    NSLog(@"开始下载 ===%@", appInfo.icon);
 //    if (_operationCache[appInfo.icon]) {
 //        NSLog(@"正在下载中。。。");
 //        return;
@@ -69,12 +69,16 @@
     
     
     
-    // 增加manager 类后
-    [[DownLoadManager sharedInstance] downloadImageWithurlPath:appInfo.icon finishBlock:^(UIImage *image) {
-        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-            self.testImage.image = image;
-        }];
-    }];
+//    // 增加manager 类后
+//    [[DownLoadManager sharedInstance] downloadImageWithurlPath:appInfo.icon finishBlock:^(UIImage *image) {
+//        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+//            self.testImageView.image = image;
+//        }];
+//    }];
+    
+    
+    // 增加自定义的imageView类后
+    [self.testImageView test_setDownLoadImageWithurlPath:appInfo.icon placeholderImage:[UIImage imageNamed:@"user_default"]];
     
     
     
@@ -133,7 +137,7 @@
     [super didReceiveMemoryWarning];
     
     [_operationCache removeAllObjects];
-    self.testImage.image = nil;
+    self.testImageView.image = nil;
     // Dispose of any resources that can be recreated.
 }
 

@@ -10,4 +10,7 @@
 
 @interface TestImageView : UIImageView
 
+
+- (void)test_setDownLoadImageWithurlPath:(NSString *)urlPath placeholderImage:(UIImage *)placeholderImage;
+
 @end

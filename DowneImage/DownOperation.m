@@ -19,8 +19,19 @@
 - (void)main {
     @autoreleasepool {
         NSURL *url = [NSURL URLWithString:_urlStr];
+        
+        if (self.isCancelled) {
+            NSLog(@"第一次被取消了");
+            return;
+        }
+        
         NSData *data = [NSData dataWithContentsOfURL:url];
         sleep(5);
+        
+        if (self.isCancelled) {
+            NSLog(@"第二次被取消了");
+            return;
+        }
         
         // 下载完成缓存到本地
 #warning 缓存到本地, 只能缓存 property列表里的对象（包括 NSData, NSDate, NSNumber, NSString, NSArray, or NSDictionary）,图片需要转化为二进制
@@ -34,7 +45,18 @@
         
         UIImage *image = [UIImage imageWithData:data];
         
+        if (self.isCancelled) {
+            NSLog(@"第三次被取消了");
+            return;
+        }
+        
+        
         if (_finishBlock) {
+            
+            if (self.isCancelled) {
+                NSLog(@"第一次被取消了");
+                return;
+            }
             _finishBlock(image);
         }
     }

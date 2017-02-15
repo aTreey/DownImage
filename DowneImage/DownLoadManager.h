@@ -6,10 +6,15 @@
 //  Copyright © 2017年 Hongpeng Yu. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "DownOperation.h"
 
 @interface DownLoadManager : NSObject
+
 + (instancetype)sharedInstance;
+
+- (void)cancelDownLoadOperationWithurlPath:(NSString *)urlPath;
+
 - (void)downloadImageWithurlPath:(NSString *)urlPath finishBlock:(finishBlock)finishBlock;
+
 @end

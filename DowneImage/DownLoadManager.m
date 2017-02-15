@@ -65,6 +65,27 @@
 
 
 #pragma mark -
+#pragma mark 取消旧的下载
+
+- (void)cancelDownLoadOperationWithurlPath:(NSString *)urlPath {
+    
+    // 从下载任务缓存中取出对应操作
+    DownOperation *operaton = self.operationCache[urlPath];
+#warning 需要判断是否第一次,如果是第一次不用取消,return
+    if (operaton == nil) return;
+    
+    if (![operaton isCancelled]) {
+        [operaton cancel];
+        
+//        [operaton cancel] 自杀，只是标记了一个死亡，并未真正的取消
+#warning 需要在被取消的任务中时时判断是否取消(在程序的关键处), 如果取消,结束任务
+        
+        [self.operationCache removeObjectForKey:urlPath];
+    }
+}
+
+
+#pragma mark -
 #pragma mark cache
 
 - (BOOL)hasImageCache:(NSString *)urlPath {

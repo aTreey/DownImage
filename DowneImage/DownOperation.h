@@ -13,5 +13,6 @@ typedef void(^finishBlock)(UIImage *image);
 
 @interface DownOperation : NSOperation
 
+
 + (instancetype)downImageWithurlPath:(NSString *)urlPath finishBlcok:(finishBlock)finishBlock;
 @end

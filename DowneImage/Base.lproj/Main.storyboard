@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h7I-2M-9N1">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h7I-2M-9N1" customClass="TestImageView">
                                 <rect key="frame" x="120.5" y="273.5" width="134" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="XxO-22-D0u"/>
@@ -36,7 +36,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="testImage" destination="h7I-2M-9N1" id="hGh-AY-2tk"/>
+                        <outlet property="testImageView" destination="h7I-2M-9N1" id="lHh-ZA-8Ud"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
