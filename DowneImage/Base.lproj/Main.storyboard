@@ -28,15 +28,23 @@
                                     <constraint firstAttribute="width" constant="134" id="isf-DT-4CJ"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pZ6-ag-MO2">
+                                <rect key="frame" x="120.5" y="75" width="134" height="120"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="pZ6-ag-MO2" firstAttribute="centerX" secondItem="h7I-2M-9N1" secondAttribute="centerX" id="3Ke-P6-7RT"/>
                             <constraint firstItem="h7I-2M-9N1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9t5-Jh-RwL"/>
+                            <constraint firstItem="h7I-2M-9N1" firstAttribute="top" secondItem="pZ6-ag-MO2" secondAttribute="bottom" constant="78.5" id="J8C-dU-xN9"/>
+                            <constraint firstItem="pZ6-ag-MO2" firstAttribute="width" secondItem="h7I-2M-9N1" secondAttribute="width" id="NKT-g6-3NH"/>
+                            <constraint firstItem="pZ6-ag-MO2" firstAttribute="height" secondItem="h7I-2M-9N1" secondAttribute="height" id="UKC-TC-IRl"/>
                             <constraint firstItem="h7I-2M-9N1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vBe-0G-SoU"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="testImageView" destination="h7I-2M-9N1" id="lHh-ZA-8Ud"/>
+                        <outlet property="myImageView" destination="pZ6-ag-MO2" id="W0v-Je-sr1"/>
+                        <outlet property="testImageView" destination="h7I-2M-9N1" id="vd1-jD-UhI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

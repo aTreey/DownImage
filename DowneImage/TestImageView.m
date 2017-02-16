@@ -15,7 +15,7 @@
 @end
 
 @implementation TestImageView
-
+//
 - (void)test_setDownLoadImageWithurlPath:(NSString *)urlPath placeholderImage:(UIImage *)placeholderImage {
     
     self.image = placeholderImage;

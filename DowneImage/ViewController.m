@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "Model.h"
 #import "TestImageView.h"
+#import "UIImageView+category.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) NSArray *appInfos;
@@ -24,6 +25,9 @@
 @property (nonatomic, strong) NSMutableDictionary *operationCache;
 
 @property (weak, nonatomic) IBOutlet TestImageView *testImageView;
+
+
+@property (weak, nonatomic) IBOutlet UIImageView *myImageView;
 
 @end
 
@@ -78,8 +82,11 @@
     
     
     // 增加自定义的imageView类后
-    [self.testImageView test_setDownLoadImageWithurlPath:appInfo.icon placeholderImage:[UIImage imageNamed:@"user_default"]];
+//    [self.testImageView test_setDownLoadImageWithurlPath:appInfo.icon placeholderImage:[UIImage imageNamed:@"user_default"]];
     
+    
+    
+    [self.myImageView test_setDownLoadImageWithurlPath:appInfo.icon placeholderImage:[UIImage imageNamed:@"user_default"]];
     
     
     /*
